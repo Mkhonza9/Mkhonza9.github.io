@@ -1,0 +1,52 @@
+import wolframalpha
+import imdb
+
+print("favorite Movies: ")
+
+app_id = 'AYEU9E-TKL7694PW8'
+
+ia = imdb.IMDb()
+
+search = ia.search_movie("Mad Max: Fury Road")
+  
+id = search[0].getID()
+movie = ia.get_movie(id)
+
+title = movie["title"]
+year = movie["year"]
+
+
+print("Movie Information: ")
+print(f'{title} ')
+print(f'{year} ')
+
+
+
+search = ia.search_movie("Avatar")
+  
+id = search[0].getID()
+movie = ia.get_movie(id)
+
+title = movie["title"]
+year = movie["year"]
+
+
+print("Movie Information: ")
+print(f'{title} ')
+print(f'{year} ')
+
+
+
+
+search = ia.search_movie("Spider-Man: Into the Spider-Verse")
+  
+id = search[0].getID()
+movie = ia.get_movie(id)
+
+title = movie["title"]
+year = movie["year"]
+
+
+print("Movie Information: ")
+print(f'{title} ')
+print(f'{year} ')

@@ -1,0 +1,19 @@
+import wolframalpha
+import imdb
+
+ia = imdb.IMDb()  
+
+
+app_id = 'AYEU9E-TKL7694PW8'
+  
+
+client = wolframalpha.Client(app_id)
+  
+top = ia.get_top250_movies()
+
+
+print("Top 3 movie ratings: ")
+for movie in top[0:3]:
+  print(movie)
+print()
+print(answer)
